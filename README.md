@@ -1,0 +1,1 @@
+# pengumuman-penerimaan.mpk-osis
