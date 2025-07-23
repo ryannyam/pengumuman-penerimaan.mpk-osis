@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pengumuman Penerimaan Calon Anggota MPK/OSIS Masa Bakti 2025/2026</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background:#ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .container {
+      background: cream;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    input,
+    select,
+    button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .loading {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+    }
+
+    .accepted {
+      color: green;
+    }
+
+    .rejected {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>  
+
+  <div class="container">
+    <h2>Pengumuman Penerimaan Calon Anggota MPK/OSIS Masa Bakti 2025/2026</h2>
+    <select id="nama">
+        <option value="">Nama Lengkap</option>
+        <option value="Achmad Aminatul Firdaus">Achmad Aminatul Firdaus</option>
+        <option value="Adhika Pratama">Adhika Pratama</option>
+        <option value="Adhim Rahmatullah Lail">Adhim Rahmatullah Lail</option>
+        <option value="Adinda Herdyana Nur A.">Adinda Herdyana Nur A.</option>
+        <option value="Ahmad Husen Rifa'i">Ahmad Husen Rifa'i</option>
+        <option value="Ain Naufal Rifai">Ain Naufal Rifai</option>
+        <option value="Aisya Rohmatuszzahro">Aisya Rohmatuszzahro</option>
+        <option value="Aisyah Nadiatus Syarifah">Aisyah Nadiatus Syarifah</option>
+        <option value="Alfia Rahma">Alfia Rahma</option>
+        <option value="Almira Fitriana Putri R.">Almira Fitriana Putri R.</option>
+        <option value="Amelia Aisyah H.">Amelia Aisyah H.</option>
+        <option value="Anastasya Kusuma W.">Anastasya Kusuma W.</option>
+        <option value="Angelica Putri A.">Angelica Putri A.</option>
+        <option value="Anggi Rediansyahputri">Anggi Rediansyahputri</option>
+        <option value="Anggun Fitria P.">Anggun Fitria P.</option>
+        <option value="Annisa Najwa I.">Annisa Najwa I.</option>
+        <option value="Anugerah Nurlailatul M.">Anugerah Nurlailatul M.</option>
+        <option value="Aprillia Chartadhini">Aprillia Chartadhini</option>
+        <option value="Ariane Fidela Calista">Ariane Fidela Calista</option>
+        <option value="Atha Fairuz A.">Atha Fairuz A.</option>
+        <option value="Aurel Vega Indah Putri">Aurel Vega Indah Putri</option>
+        <option value="Ayeesa Marwa Zahrifah">Ayeesa Marwa Zahrifah</option>
+        <option value="Bagas Fitri Maula Hueaifah">Bagas Fitri Maula Hueaifah</option>
+        <option value="Bagus Oka Wahyu W.">Bagus Oka Wahyu W.</option>
+        <option value="Balqis Fitria Maula H">Balqis Fitria Maula H</option>
+        <option value="Calista Ayudya S.">Calista Ayudya S.</option>
+        <option value="Chrisant Nathania A. P.">Chrisant Nathania A. P.</option>
+        <option value="Danis Julianisa Putri">Danis Julianisa Putri</option>
+        <option value="Devina Dwi Safitri">Devina Dwi Safitri</option>
+        <option value="Devita Dwi Prameswary">Devita Dwi Prameswary</option>
+        <option value="Dinda Aulia Rahmadani P.">Dinda Aulia Rahmadani P.</option>
+        <option value="Dinda Gisca Sisilia">Dinda Gisca Sisilia</option>
+        <option value="Dwi Bagas Putra A.">Dwi Bagas Putra A.</option>
+        <option value="Dwi Shava N.A.">Dwi Shava N.A.</option>
+        <option value="Eysha Kirania Az Zahra">Eysha Kirania Az Zahra</option>
+        <option value="Faris Andika F.">Faris Andika F.</option>
+        <option value="Fioren Raissa Moyna">Fioren Raissa Moyna</option>
+        <option value="Firsyah Yunita Dwi A.">Firsyah Yunita Dwi A.</option>
+        <option value="Geysha Adibah Islami Kamal">Geysha Adibah Islami Kamal</option>
+        <option value="Griselda Ardis W.">Griselda Ardis W.</option>
+        <option value="Griselda Yasmine Q.">Griselda Yasmine Q.</option>
+        <option value="Hani Nur Dewanti">Hani Nur Dewanti</option>
+        <option value="Intan Aulia Rahman">Intan Aulia Rahman</option>
+        <option value="Irhamilla Azza Erina">Irhamilla Azza Erina</option>
+        <option value="Isna Zaskia Syarifah A.">Isna Zaskia Syarifah A.</option>
+        <option value="Izzah Billa Nuro">Izzah Billa Nuro</option>
+        <option value="Jessica Zora Amelia P.">Jessica Zora Amelia P.</option>
+        <option value="Jihan Amira Zahra">Jihan Amira Zahra</option>
+        <option value="Kayla Kinara Maheswari">Kayla Kinara Maheswari</option>
+        <option value="Khaira Syifa A.">Khaira Syifa A.</option>
+        <option value="Khanza Aprilia S. A.">Khanza Aprilia S. A.</option>
+        <option value="Leilani Zahro">Leilani Zahro</option>
+        <option value="Lentera Putri Pertiwi">Lentera Putri Pertiwi</option>
+        <option value="M. Ariefo Reza P.">M. Ariefo Reza P.</option>
+        <option value="M. Resha Al habibi">M. Resha Al habibi</option>
+        <option value="M. Reyhan Al Habibi">M. Reyhan Al Habibi</option>
+        <option value="M. Taufiq A.">M. Taufiq A.</option>
+        <option value="Marvellino Raffandhika H.">Marvellino Raffandhika H.</option>
+        <option value="Maryam Amara Sasmi">Maryam Amara Sasmi</option>
+        <option value="May Lani Alifia Maharani">May Lani Alifia Maharani</option>
+        <option value="Nabila Nasyiwa Maharani">Nabila Nasyiwa Maharani</option>
+        <option value="Nadia Aqilah N.">Nadia Aqilah N.</option>
+        <option value="Naila Habibatul M">Naila Habibatul M</option>
+        <option value="Naila wasiul fajriah">Naila wasiul fajriah</option>
+        <option value="Naira Zerlina Faizah">Naira Zerlina Faizah</option>
+        <option value="Naomita Hudayani">Naomita Hudayani</option>
+        <option value="Natarina Tameika Y.">Natarina Tameika Y.</option>
+        <option value="Natasya Cahya A.">Natasya Cahya A.</option>
+        <option value="Naura Syakira Sukma P.">Naura Syakira Sukma P.</option>
+        <option value="Naurah Novita Mufid">Naurah Novita Mufid</option>
+        <option value="Nayyifa Tifani Agustina">Nayyifa Tifani Agustina</option>
+        <option value="Nezya Viantama Firdaus">Nezya Viantama Firdaus</option>
+        <option value="Niki Dwi Y. N.">Niki Dwi Y. N.</option>
+        <option value="Nugraheni Hidayah">Nugraheni Hidayah</option>
+        <option value="Olivia Putri Eri A.">Olivia Putri Eri A.</option>
+        <option value="Olivia Ramadhani P.">Olivia Ramadhani P.</option>
+        <option value="Ollievieta Isnaidira M.">Ollievieta Isnaidira M.</option>
+        <option value="Putri Balqis A. A.">Putri Balqis A. A.</option>
+        <option value="Putri Kayla A. Z.">Putri Kayla A. Z.</option>
+        <option value="Putri M Sari">Putri M Sari</option>
+        <option value="Radella Aribah N.">Radella Aribah N.</option>
+        <option value="Radita Aulia Prastika">Radita Aulia Prastika</option>
+        <option value="Radita Aulia Prastika">Radita Aulia Prastika</option>
+        <option value="Rafi Dwi Saktian">Rafi Dwi Saktian</option>
+        <option value="Rahkmad Fathoni">Rahkmad Fathoni</option>
+        <option value="Raka Wisnu Anggoro">Raka Wisnu Anggoro</option>
+        <option value="Restu Wira Sakti">Restu Wira Sakti</option>
+        <option value="Rifka Azalia Rahima">Rifka Azalia Rahima</option>
+        <option value="Sachie Salsabila Andita Z.">Sachie Salsabila Andita Z.</option>
+        <option value="Safwah Haziyatul Adibah">Safwah Haziyatul Adibah</option>
+        <option value="Sekar arum ezra safitri">Sekar arum ezra safitri</option>
+        <option value="Sekar Ayu Candraningtyas P. U.">Sekar Ayu Candraningtyas P. U.</option>
+        <option value="Shofia Dewi Fajria">Shofia Dewi Fajria</option>
+        <option value="Sifani Irzani">Sifani Irzani</option>
+        <option value="Titania Rahma Metha F. R.">Titania Rahma Metha F. R.</option>
+        <option value="Tyas Ariyani">Tyas Ariyani</option>
+        <option value="Valencia Zahrotus S.">Valencia Zahrotus S.</option>
+        <option value="Verlita Dwy Margareta">Verlita Dwy Margareta</option>
+        <option value="Yasmin Zahra K.">Yasmin Zahra K.</option>
+        <option value="Zabrina Noorsayla Adelia T.">Zabrina Noorsayla Adelia T.</option>
+        <option value="Zahrotus Syifa Quinza R.">Zahrotus Syifa Quinza R.</option>
+
+    </select>
+
+    <select id="gugus">
+      <option value="">Pilih Asal Gugus/Kelas</option>
+      <option value="11.4">11.4</option>
+      <option value="11.9">11.9</option>
+      <option value="Anginara">Anginara</option>
+      <option value="Baratra">Baratra</option>
+      <option value="Cahyadipa">Cahyadipa</option>
+      <option value="Driyana">Driyana</option>
+      <option value="Gunatra">Gunatra</option>
+      <option value="Kalawira">Kalawira</option>
+      <option value="Kelana">Kelana</option>
+      <option value="Langsena">Langsena</option>
+      <option value="Lelana">Lelana</option>
+      <option value="Mandaka">Mandaka</option>
+      <option value="Nagantara">Nagantara</option>
+      <option value="Petrawangasa">Petrawangasa</option>
+      <option value="Samudraya">Samudraya</option>
+      <option value="Sawitri">Sawitri</option>
+
+    </select>
+
+    <button onclick="cekStatus()">Cek Status</button>
+    <div class="loading" id="loading" style="display:none;">Mengecek status...</div>
+    <div class="result" id="hasil"></div>
+  </div>
+
+  <script>
+    const data = [
+      { nama: "Achmad Aminatul Firdaus", gugus: "Baratra", status: "DITERIMA" },
+      { nama: "Adhika Pratama", gugus: "Gunatra", status: "DITERIMA" },
+      { nama: "Adhim Rahmatullah Lail", gugus: "Anginara", status: "DITERIMA" },
+      { nama: "Adinda Herdyana Nur A.", gugus: "Kalawira", status: "TIDAK DITERIMA" },
+      { nama: "Ahmad Husen Rifa'i", gugus: "Kelana", status: "TIDAK DITERIMA" },
+      { nama: "Ain Naufal Rifai", gugus: "11.9", status: "TIDAK DITERIMA" },
+      { nama: "Aisya Rohmatuszzahro", gugus: "Kelana", status: "TIDAK DITERIMA" },
+      { nama: "Aisyah Nadiatus Syarifah", gugus: "Petrawangasa", status: "DITERIMA" },
+      { nama: "Alfia Rahma", gugus: "Sawitri", status: "TIDAK DITERIMA" },
+      { nama: "Almira Fitriana Putri R.", gugus: "Gunatra", status: "TIDAK DITERIMA" },
+      { nama: "Amelia Aisyah H.", gugus: "Anginara", status: "TIDAK DITERIMA" },
+      { nama: "Anastasya Kusuma W.", gugus: "11.4", status: "TIDAK DITERIMA" },
+      { nama: "Angelica Putri A.", gugus: "Samudraya", status: "TIDAK DITERIMA" },
+      { nama: "Anggi Rediansyahputri", gugus: "Sawitri", status: "TIDAK DITERIMA" },
+      { nama: "Anggun Fitria P.", gugus: "Gunatra", status: "TIDAK DITERIMA" },
+      { nama: "Annisa Najwa I.", gugus: "Kalawira", status: "TIDAK DITERIMA" },
+      { nama: "Anugerah Nurlailatul M.", gugus: "Mandaka", status: "TIDAK DITERIMA" },
+      { nama: "Aprillia Chartadhini", gugus: "Kelana", status: "DITERIMA" },
+      { nama: "Ariane Fidela Calista", gugus: "Samudraya", status: "TIDAK DITERIMA" },
+      { nama: "Atha Fairuz A.", gugus: "Gunatra", status: "TIDAK DITERIMA" },
+      { nama: "Aurel Vega Indah Putri", gugus: "Langsena", status: "TIDAK DITERIMA" },
+      { nama: "Ayeesa Marwa Zahrifah", gugus: "Baratra", status: "TIDAK DITERIMA" },
+      { nama: "Bagas Fitri Maula Hueaifah", gugus: "Driyana", status: "TIDAK DITERIMA" },
+      { nama: "Bagus Oka Wahyu W.", gugus: "Anginara", status: "DITERIMA" },
+      { nama: "Balqis Fitria Maula H", gugus: "Gunatra", status: "TIDAK DITERIMA" },
+      { nama: "Calista Ayudya S.", gugus: "Kalawira", status: "TIDAK DITERIMA" },
+      { nama: "Chrisant Nathania A. P.", gugus: "Petrawangsa", status: "DITERIMA" },
+      { nama: "Damul'izi D. Z.", gugus: "Mandaka", status: "DITERIMA" },
+      { nama: "Danis Julianisa Putri", gugus: "Nagantara", status: "TIDAK DITERIMA" },
+      { nama: "Devina Dwi Safitri", gugus: "Sawitri", status: "TIDAK DITERIMA" },
+      { nama: "Devita Dwi Prameswary", gugus: "Driyana", status: "TIDAK DITERIMA" },
+      { nama: "Dinda Aulia Rahmadani P.", gugus: "Langsenax", status: "TIDAK DITERIMA" },
+      { nama: "Dinda Gisca Sisilia", gugus: "Samudraya", status: "TIDAK DITERIMA" },
+      { nama: "Dwi Bagas Putra A.", gugus: "Driyana", status: "DITERIMA" },
+      { nama: "Dwi Shava N.A.", gugus: "Petrawangsa", status: "TIDAK DITERIMA" },
+      { nama: "Eysha Kirania Az Zahra", gugus: "Baratra", status: "DITERIMA" },
+      { nama: "Faris Andika F.", gugus: "Anginara", status: "TIDAK DITERIMA" },
+      { nama: "Fioren Raissa Moyna", gugus: "Nagantara", status: "DITERIMA" },
+      { nama: "Firsyah Yunita Dwi A.", gugus: "Mandaka", status: "TIDAK DITERIMA" },
+      { nama: "Geysha Adibah Islami Kamal", gugus: "Petrawangsa", status: "DITERIMA" },
+      { nama: "Griselda Ardis W.", gugus: "Driyana", status: "TIDAK DITERIMA" },
+      { nama: "Griselda Yasmine Q.", gugus: "Mandaka", status: "TIDAK DITERIMA" },
+      { nama: "Hani Nur Dewanti", gugus: "Baratra", status: "DITERIMA" },
+      { nama: "Intan Aulia Rahman", gugus: "Nagantara", status: "DITERIMA" },
+      { nama: "Irhamilla Azza Erina", gugus: "Sawitri", status: "TIDAK DITERIMA" },
+      { nama: "Isna Zaskia Syarifah A.", gugus: "Baratra", status: "DITERIMA" },
+      { nama: "Izzah Billa Nuro", gugus: "Anginara", status: "TIDAK DITERIMA" },
+      { nama: "Jessica Zora Amelia P.", gugus: "Kelana", status: "DITERIMA" },
+      { nama: "Jihan Amira Zahra", gugus: "Langsena", status: "DITERIMA" },
+      { nama: "Kayla Kinara Maheswari", gugus: "Kelana", status: "TIDAK DITERIMA" },
+      { nama: "Khaira Syifa A.", gugus: "Kelana", status: "TIDAK DITERIMA" },
+      { nama: "Khanza Aprilia S. A.", gugus: "Nagantara", status: "DITERIMA" },
+      { nama: "Leilani Zahro", gugus: "Driyana", status: "TIDAK DITERIMA" },
+      { nama: "Lentera Putri Pertiwi", gugus: "Sawitri", status: "TIDAK DITERIMA" },
+      { nama: "M. Ariefo Reza P.", gugus: "Petrawangsa", status: "TIDAK DITERIMA" },
+      { nama: "M. Resha Al habibi", gugus: "Driyana", status: "TIDAK DITERIMA" },
+      { nama: "M. Reyhan Al Habibi", gugus: "Sawitri", status: "TIDAK DITERIMA" },
+      { nama: "M. Taufiq A.", gugus: "Lelana", status: "DITERIMA" },
+      { nama: "Marvellino Raffandhika H.", gugus: "Mandaka", status: "TIDAK DITERIMA" },
+      { nama: "Maryam Amara Sasmi", gugus: "Driyana", status: "DITERIMA" },
+      { nama: "May Lani Alifia Maharani", gugus: "Anginara", status: "TIDAK DITERIMA" },
+      { nama: "Nabila Nasyiwa Maharani", gugus: "Anginara", status: "DITERIMA" },
+      { nama: "Nadia Aqilah N.", gugus: "Langsena", status: "TIDAK DITERIMA" },
+      { nama: "Naila Habibatul M", gugus: "Kelana", status: "DITERIMA" },
+      { nama: "Naila wasiul fajriah ", gugus: "Gunatra", status: "TIDAK DITERIMA" },
+      { nama: "Naira Zerlina Faizah", gugus: "Samudraya", status: "TIDAK DITERIMA" },
+      { nama: "Naomita Hudayani", gugus: "Sawitri", status: "TIDAK DITERIMA" },
+      { nama: "Natarina Tameika Y.", gugus: "Kelana", status: "TIDAK DITERIMA" },
+      { nama: "Natasya Cahya A.", gugus: "Nagantara", status: "TIDAK DITERIMA" },
+      { nama: "Naura Syakira Sukma P.", gugus: "Kelana", status: "DITERIMA" },
+      { nama: "Naurah Novita Mufid", gugus: "Anginara", status: "DITERIMA" },
+      { nama: "Nayyifa Tifani Agustina", gugus: "Baratra", status: "TIDAK DITERIMA" },
+      { nama: "Nezya Viantama Firdaus", gugus: "Langsena", status: "DITERIMA" },
+      { nama: "Niki Dwi Y. N.", gugus: "Langsena", status: "TIDAK DITERIMA" },
+      { nama: "Nugraheni Hidayah", gugus: "Gunatra", status: "TIDAK DITERIMA" },
+      { nama: "Olivia Putri Eri A.", gugus: "Lelana", status: "TIDAK DITERIMA" },
+      { nama: "Olivia Ramadhani P.", gugus: "Anginara", status: "TIDAK DITERIMA" },
+      { nama: "Ollievieta Isnaidira M.", gugus: "Nagantara", status: "TIDAK DITERIMA" },
+      { nama: "Putri Balqis A. A.", gugus: "Baratra", status: "TIDAK DITERIMA" },
+      { nama: "Putri Kayla A. Z.", gugus: "Cahyadipa", status: "TIDAK DITERIMA" },
+      { nama: "Putri M Sari", gugus: "Cahyadipa", status: "TIDAK DITERIMA" },
+      { nama: "Radella Aribah N.", gugus: "Gunatra", status: "TIDAK DITERIMA" },
+      { nama: "Radita Aulia Prastika", gugus: "Anginara", status: "TIDAK DITERIMA" },
+      { nama: "Radita Aulia Prastika", gugus: "Anginara", status: "TIDAK DITERIMA" },
+      { nama: "Rafi Dwi Saktian", gugus: "Baratra", status: "DITERIMA" },
+      { nama: "Rahkmad Fathoni", gugus: "Kalawira", status: "DITERIMA" },
+      { nama: "Raka Wisnu Anggoro", gugus: "Petrawangsa", status: "DITERIMA" },
+      { nama: "Restu Wira Sakti", gugus: "Samudraya", status: "DITERIMA" },
+      { nama: "Rifka Azalia Rahima", gugus: "Petrawangsa", status: "DITERIMA" },
+      { nama: "Sachie Salsabila Andita Z.", gugus: "Petrawangsa", status: "TIDAK DITERIMA" },
+      { nama: "Safwah Haziyatul Adibah", gugus: "Baratra", status: "DITERIMA" },
+      { nama: "Sekar arum ezra safitri", gugus: "Anginara", status: "TIDAK DITERIMA" },
+      { nama: "Sekar Ayu Candraningtyas P. U.", gugus: "Driyana", status: "DITERIMA" },
+      { nama: "Shofia Dewi Fajria", gugus: "Lelana", status: "DITERIMA" },
+      { nama: "Sifani Irzani", gugus: "Driyana", status: "DITERIMA" },
+      { nama: "Titania Rahma Metha F. R.", gugus: "Sawitri", status: "DITERIMA" },
+      { nama: "Tyas Ariyani", gugus: "Sawitri", status: "TIDAK DITERIMA" },
+      { nama: "Valencia Zahrotus S.", gugus: "Samudraya", status: "DITERIMA" },
+      { nama: "Verlita Dwy Margareta", gugus: "Driyana", status: "TIDAK DITERIMA" },
+      { nama: "Yasmin Zahra K.", gugus: "Cahyadipa", status: "DITERIMA" },
+      { nama: "Zabrina Noorsayla Adelia T.", gugus: "Lelana", status: "DITERIMA" },
+      { nama: "Zahrotus Syifa Quinza R.", gugus: "Nagantara", status: "TIDAK DITERIMA" }
+
+    ];
+
+    function cekStatus() {
+      const namaInput = document.getElementById('nama').value.trim().toUpperCase();
+      const gugusInput = document.getElementById('gugus').value;
+      const hasil = document.getElementById('hasil');
+      const loading = document.getElementById('loading');
+      hasil.innerHTML = '';
+      loading.style.display = 'block';
+
+      setTimeout(() => {
+        loading.style.display = 'none';
+        const found = data.find(entry =>
+          entry.nama === namaInput && entry.gugus === gugusInput
+        );
+
+        if (found) {
+          hasil.innerHTML = found.status === "DITERIMA"
+            ? `<span class="accepted">Selamat, Anda DITERIMA!</span>`
+            : `<span class="rejected">Mohon maaf, Anda TIDAK DITERIMA.</span>`;
+        } else {
+          hasil.innerHTML = '<span class="rejected">Data tidak ditemukan. Pastikan nama dan gugus sesuai.</span>';
+        }
+      }, 2000); // Simulasi animasi loading 2 detik
+    }
+  </script>
+
+</body>
+
+</html>
